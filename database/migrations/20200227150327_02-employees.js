@@ -3,14 +3,6 @@ exports.up = function(knex) {
     employees.increments();
 
     employees.string("employee_name", 128).notNullable();
-
-    employees
-      .integer("department_number")
-      .notNullable()
-      .references("id")
-      .inTable("departments")
-      .onDelete("RESTRICT")
-      .onUpdate("CASCADE");
   });
 };
 
