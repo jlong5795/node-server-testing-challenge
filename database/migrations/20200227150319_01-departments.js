@@ -4,8 +4,7 @@ exports.up = function(knex) {
 
     departments
       .string("department_name", 128)
-      .notNullable()
-      .unique();
+      .notNullable();
   });
 };
 

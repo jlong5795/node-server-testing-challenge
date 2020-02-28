@@ -26,12 +26,7 @@ describe("employees router", function() {
         });
     });
   });
-});
 
-describe("departments router", function() {
-  it("should run the tests", function() {
-    expect(true).toBe(true);
-  });
 
   describe("GET /api/departments", function() {
     it("should return 200 ok", function() {
